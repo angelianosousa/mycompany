@@ -25,6 +25,7 @@ app.use(express.static(path.join(__dirname, 'node_modules')));
 
 app.use('/', homeRouter);
 app.use('/home', homeRouter);
+app.use('/mycompany', homeRouter);
 app.use('/users', usersRouter);
 
 // catch 404 and forward to error handler
